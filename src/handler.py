@@ -15,10 +15,6 @@ import socket
 import traceback
 import logging
 
-from network_volume import (
-    is_network_volume_debug_enabled,
-    run_network_volume_diagnostics,
-)
 
 # ---------------------------------------------------------------------------
 # Logging setup
@@ -582,8 +578,6 @@ def handler(job):
     # ---------------------------------------------------------------------------
     # Network Volume Diagnostics (opt-in via NETWORK_VOLUME_DEBUG=true)
     # ---------------------------------------------------------------------------
-    if is_network_volume_debug_enabled():
-        run_network_volume_diagnostics()
 
     job_input = job["input"]
     job_id = job["id"]
