@@ -1,4 +1,4 @@
-FROM runpod/worker-comfyui:6.0.0-base
+FROM runpod/worker-comfyui:5.8.5-base
 
 RUN comfy-node-install ComfyUI-LTXVideo
 
